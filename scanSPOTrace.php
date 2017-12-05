@@ -5,7 +5,7 @@
   $yesterday = strtotime("yesterday");
   $filedate = date("Ymd",$yesterday);
   $filename = "SPOTracefile_$filedate.log";
-  chdir("C:\\OpenRoad\\log\\SPOLogs");
+  chdir($_ENV["II_LOG"]);
   $totslaves = 0;
   $linecount = 0;
   $queue = 0;
